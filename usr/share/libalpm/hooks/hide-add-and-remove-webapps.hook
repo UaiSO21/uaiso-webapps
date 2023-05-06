@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = biglinux-webapps
+
+[Action]
+Description = Automatic hide Add and Remove WebApps
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/hide-add-and-remove-webapps
