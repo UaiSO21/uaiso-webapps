@@ -7,4 +7,4 @@ Name=Chatmix
 Exec=/usr/bin/biglinux-webapp --class="chatmix.com.br,Chromium-browser" --profile-directory=Default --app=https://chatmix.com.br
 Icon=/usr/share/icons/hicolor/128x128/apps/chatmix.png
 StartupWMClass=chatmix.com.br
-Categories=Webapps;
+Categories=Network;WebBrowser;
