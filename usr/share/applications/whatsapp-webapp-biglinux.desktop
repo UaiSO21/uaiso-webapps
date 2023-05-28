@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=WhatsApp
-Exec=~/.local/bin/whatsapp-webapp-biglinux-firefox
+Exec=/usr/share/bigbashview/bcc/apps/biglinux-webapps/assets/firefox/bin/whatsapp-webapp-biglinux-firefox
 Icon=/usr/share/icons/hicolor/128x128/apps/whatsapp.png
 Categories=Network;WebBrowser;
