@@ -16,9 +16,14 @@ pre_upgrade() {
 }
 
 ## arg 2:  the old package version
-#post_upgrade() {
-#	post_install
-#}
+post_upgrade() {
+	if [ -f /usr/share/applications/biglinux-webapps.desktop ]; then
+		echo "BigLinux Webapps existe"
+	else
+		echo "BigLinux Webapps mão existe"
+		pacman -S biglinux-webapps --noconfirm
+	fi
+}
 
 ## arg 1:  the old package version
 #pre_remove() {
