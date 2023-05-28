@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#se não estiver oculto, ocultar
-if [ -z "$(grep Hidden=true /usr/share/applications/biglinux-webapps.desktop)" ];then
-    echo "Hidden=true" | tee -a /usr/share/applications/biglinux-webapps.desktop
-fi
