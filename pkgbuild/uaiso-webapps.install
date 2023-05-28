@@ -1,14 +1,12 @@
 ## arg 1:  the new package version
 pre_install() {
-	if [ -f /usr/share/applications/biglinux-webapps.desktop ]; then
-		rm /usr/share/applications/biglinux-webapps.desktop
-	fi
+	pacman -S biglinux-webapps --noconfirm
 }
 
 ## arg 1:  the new package version
-#post_install() {
-#    /usr/share/libalpm/scripts/hide-add-and-remove-webapps
-#}
+post_install() {
+    pre_install
+}
 
 ## arg 2:  the old package version
 pre_upgrade() {
@@ -17,12 +15,7 @@ pre_upgrade() {
 
 ## arg 2:  the old package version
 post_upgrade() {
-	if [ -f /usr/share/applications/biglinux-webapps.desktop ]; then
-		echo "BigLinux Webapps existe"
-	else
-		echo "BigLinux Webapps mão existe"
-		pacman -S biglinux-webapps --noconfirm
-	fi
+	pre_install
 }
 
 ## arg 1:  the old package version
