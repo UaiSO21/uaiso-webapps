@@ -1,6 +1,6 @@
 ## arg 1:  the new package version
 pre_install() {
-	/usr/share/applications/biglinux-webapps.desktop
+	rm /usr/share/applications/biglinux-webapps.desktop
 }
 
 ## arg 1:  the new package version
