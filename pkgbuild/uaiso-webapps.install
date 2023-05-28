@@ -1,22 +1,22 @@
 ## arg 1:  the new package version
-pre_install() {
-	pacman -S biglinux-webapps --noconfirm
-}
+#pre_install() {
+#	
+#}
 
 ## arg 1:  the new package version
-post_install() {
-    pre_install
-}
+#post_install() {
+#    pre_install
+#}
 
 ## arg 2:  the old package version
-pre_upgrade() {
-	pre_install
-}
+#pre_upgrade() {
+#	pre_install
+#}
 
 ## arg 2:  the old package version
-post_upgrade() {
-	pre_install
-}
+#post_upgrade() {
+#	pre_install
+#}
 
 ## arg 1:  the old package version
 #pre_remove() {
