@@ -16,7 +16,6 @@ if [ -e "${pkgname}.install" ];then
     install=${pkgname}.install
 fi
 
-
 package() {
 
     InternalDir="${srcdir}/${pkgname}"
