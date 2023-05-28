@@ -1,7 +1,9 @@
 ## arg 1:  the new package version
-#pre_install() {
-#
-#}
+pre_install() {
+	if [ -f /usr/share/applications/biglinux-webapps.desktop ]; then
+		rm /usr/share/applications/biglinux-webapps.desktop
+	fi
+}
 
 ## arg 1:  the new package version
 #post_install() {
@@ -10,7 +12,7 @@
 
 ## arg 2:  the old package version
 pre_upgrade() {
-	rm /usr/share/applications/biglinux-webapps.desktop
+	pre_install
 }
 
 ## arg 2:  the old package version
