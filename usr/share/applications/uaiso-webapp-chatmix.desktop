@@ -4,7 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Chatmix
-Exec=/usr/bin/biglinux-webapp --class="chatmix.com.br,Chromium-browser" --profile-directory=Default --app=https://chatmix.com.br
+Exec=/usr/share/bigbashview/bcc/apps/biglinux-webapps/assets/firefox/bin/uaiso-webapp-chatmix-firefox
 Icon=/usr/share/icons/hicolor/128x128/apps/chatmix.png
-StartupWMClass=chatmix.com.br
 Categories=Network;WebBrowser;
